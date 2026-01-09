@@ -81,7 +81,7 @@ body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
   position:absolute;inset:0;z-index:0;
   background:
     linear-gradient(rgba(0,25,49,.8),rgba(0,25,49,.8)),
-    url("cropped-hands-woman-writing-book.png");
+    url("images/header\ logo.png");
   background-size:cover;background-position:center;background-repeat:no-repeat;
 }
 .hero-content{
@@ -316,4 +316,125 @@ body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
   .hero-content{padding:72px 24px}
   .hero-title{font-size:48px;line-height:56px}
   .hero-actions{flex-direction:column}
+}
+/* =========================
+   FOOTER (matches screenshot)
+========================= */
+.kv-footer{
+  width:100%;
+  background:#001931; /* deep navy */
+}
+
+.kv-footer-inner{
+  max-width:1600px;
+  margin:0 auto;
+  padding:48px 120px 24px; /* similar spacing */
+}
+
+.kv-footer-top{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:24px;
+  min-height:90px;
+}
+
+/* left brand */
+.kv-footer-brand{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  text-decoration:none;
+  color:#fff;
+}
+
+.kv-footer-mark{
+  width:32px;height:32px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.kv-footer-wordmark{
+  display:flex;
+  flex-direction:column;
+  line-height:1.1;
+}
+
+.kv-footer-kv{
+  font-weight:800;
+  font-size:18px;
+  color:#30B868;
+  letter-spacing:.5px;
+}
+
+.kv-footer-name{
+  font-size:7px;
+  text-transform:uppercase;
+  color:rgba(255,255,255,.8);
+  font-weight:600;
+  letter-spacing:.8px;
+}
+
+/* right social */
+.kv-footer-social{
+  text-align:right;
+  color:#fff;
+}
+
+.kv-footer-social-title{
+  font-size:12px;
+  font-weight:600;
+  color:rgba(255,255,255,.85);
+  margin-bottom:10px;
+}
+
+.kv-footer-icons{
+  display:flex;
+  justify-content:flex-end;
+  gap:10px;
+}
+
+.kv-footer-icon{
+  width:22px;height:22px;
+  border-radius:50%;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
+
+  background:rgba(255,255,255,.12);
+  color:#fff;
+  font-size:12px;
+  font-weight:700;
+
+  transition:transform .15s ease, background .2s ease;
+}
+
+.kv-footer-icon:hover{
+  background:rgba(255,255,255,.2);
+  transform:translateY(-1px);
+}
+
+/* orange divider line */
+.kv-footer-divider{
+  margin:22px 0 16px;
+  height:2px;
+  background:#F45B2A; /* orange line like screenshot */
+  opacity:1;
+}
+
+/* bottom copyright */
+.kv-footer-bottom{
+  text-align:center;
+  font-size:11px;
+  color:rgba(255,255,255,.75);
+}
+
+/* responsive */
+@media (max-width: 900px){
+  .kv-footer-inner{padding:40px 24px 20px}
+  .kv-footer-top{flex-direction:column;align-items:flex-start}
+  .kv-footer-social{text-align:left}
+  .kv-footer-icons{justify-content:flex-start}
 }
